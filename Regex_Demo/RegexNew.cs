@@ -27,5 +27,19 @@ namespace Regex_Demo
             }
 
         }
+        public void CheckName(string name)
+        {
+            //
+            string myName = "^[A-Z][a-z]{3,}?$";
+            if (Regex.IsMatch(name, myName))
+            {
+                Console.WriteLine(" string is match the pattern");
+            }
+            else 
+            {
+                Console.WriteLine(" string  does not match the pattern");
+            }
+        }
+        
     }
 }

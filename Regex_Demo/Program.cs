@@ -12,6 +12,8 @@ namespace Regex_Demo
         {
             RegexNew regexNew = new RegexNew();
             regexNew.MyRegex();
+            RegexNew regexNews = new RegexNew();
+            regexNew.CheckName("Kiran");
         }
     }
 }
