@@ -10,10 +10,31 @@ namespace Regex_Demo
     {
         static void Main(string[] args)
         {
-            RegexNew regexNew = new RegexNew();
-            regexNew.MyRegex();
-            RegexNew regexNews = new RegexNew();
-            regexNew.CheckName("Kiran");
+            while (true)
+            {
+                Console.WriteLine("Choose the below option");
+                Console.WriteLine("1 - MyRegex");
+                Console.WriteLine("2 - Name");
+                Console.WriteLine("3 - LastName");
+                int choise = Convert.ToInt32(Console.ReadLine());
+                RegexNew regexNew = new RegexNew();
+                switch (choise)
+                {
+                    case 1:
+                        regexNew.MyRegex();
+                        break;
+                    case 2:
+                        regexNew.CheckName("Rohya");
+                        break;
+                    case 3:
+                        regexNew.LastName("Pawar");
+                        break;
+
+                   
+                }
+                
+            }
+            
         }
     }
 }
